@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-E:\Suzi\Libre Ry\Libre Ry\obj\Debug\
+E:\Suzi\Libre Ry\libreRy\Libre Ry\obj\Debug\
 Libre_Ry
 none
 false
 DEBUG;TRACE
-E:\Suzi\Libre Ry\Libre Ry\App.xaml
+E:\Suzi\Libre Ry\libreRy\Libre Ry\App.xaml
 1043444260
 
 17974102516
-19-255427602
+19-603677112
 panelAdmin.xaml;panelLogin.xaml;panelOgrenci.xaml;panelOgretmen.xaml;UserControls\ucAdminKitapEkle.xaml;UserControls\ucAdminKitaplariListele.xaml;UserControls\ucAdminKullanicilar.xaml;UserControls\ucAdminKullanimdakiKitaplar.xaml;UserControls\ucKayit.xaml;UserControls\ucLogin.xaml;
 
 True
