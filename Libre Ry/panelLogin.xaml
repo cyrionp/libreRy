@@ -1,0 +1,14 @@
+﻿<Window x:Class="Libre_Ry.panelLogin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Libre_Ry"
+        mc:Ignorable="d"
+        Title="Libre Ry" Height="600" Width="800" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+    <Grid Background="#FFD67718" Margin="0,0,0,0">
+        <Grid Name="gridLogin" Margin="0,0,0,40"/>
+        <Button x:Name="btnpanelLoginucKayit" Content="Sign up" HorizontalAlignment="Left" Margin="332,531,0,0" VerticalAlignment="Top" Width="128" Click="btnpanelLoginucKayit_Click"/>
+        <Button x:Name="btnpanelLoginucLogin" Content="Sign in" HorizontalAlignment="Left" Margin="332,531,0,0" VerticalAlignment="Top" Width="128" Click="btnpanelLoginucLogin_Click"/>
+    </Grid>
+</Window>

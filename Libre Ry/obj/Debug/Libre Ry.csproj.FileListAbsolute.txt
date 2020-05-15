@@ -1,0 +1,43 @@
+E:\Suzi\Libre Ry\Libre Ry\bin\Debug\Libre Ry.exe.config
+E:\Suzi\Libre Ry\Libre Ry\bin\Debug\Libre Ry.exe
+E:\Suzi\Libre Ry\Libre Ry\bin\Debug\Libre Ry.pdb
+E:\Suzi\Libre Ry\Libre Ry\obj\Debug\Libre Ry.csprojAssemblyReference.cache
+E:\Suzi\Libre Ry\Libre Ry\obj\Debug\App.g.cs
+E:\Suzi\Libre Ry\Libre Ry\obj\Debug\Libre Ry_MarkupCompile.cache
+E:\Suzi\Libre Ry\Libre Ry\obj\Debug\Libre Ry_MarkupCompile.lref
+E:\Suzi\Libre Ry\Libre Ry\obj\Debug\Libre Ry.g.resources
+E:\Suzi\Libre Ry\Libre Ry\obj\Debug\Libre_Ry.Properties.Resources.resources
+E:\Suzi\Libre Ry\Libre Ry\obj\Debug\Libre Ry.csproj.GenerateResource.cache
+E:\Suzi\Libre Ry\Libre Ry\obj\Debug\Libre Ry.exe
+E:\Suzi\Libre Ry\Libre Ry\obj\Debug\Libre Ry.pdb
+E:\Suzi\Libre Ry\Libre Ry\obj\Debug\panelLogin.g.cs
+E:\Suzi\Libre Ry\Libre Ry\obj\Debug\panelLogin.baml
+E:\Suzi\Libre Ry\Libre Ry\obj\Debug\UserControls\ucKayit.g.cs
+E:\Suzi\Libre Ry\Libre Ry\obj\Debug\UserControls\ucLogin.g.cs
+E:\Suzi\Libre Ry\Libre Ry\obj\Debug\UserControls\ucKayit.baml
+E:\Suzi\Libre Ry\Libre Ry\obj\Debug\UserControls\ucLogin.baml
+E:\Suzi\Libre Ry\Libre Ry\obj\Debug\Libre Ry.csproj.CoreCompileInputs.cache
+E:\Suzi\Libre Ry\Libre Ry\bin\Debug\EntityFramework.dll
+E:\Suzi\Libre Ry\Libre Ry\bin\Debug\EntityFramework.SqlServer.dll
+E:\Suzi\Libre Ry\Libre Ry\bin\Debug\System.Data.SQLite.dll
+E:\Suzi\Libre Ry\Libre Ry\bin\Debug\System.Data.SQLite.EF6.dll
+E:\Suzi\Libre Ry\Libre Ry\bin\Debug\System.Data.SQLite.Linq.dll
+E:\Suzi\Libre Ry\Libre Ry\bin\Debug\EntityFramework.xml
+E:\Suzi\Libre Ry\Libre Ry\bin\Debug\EntityFramework.SqlServer.xml
+E:\Suzi\Libre Ry\Libre Ry\bin\Debug\System.Data.SQLite.xml
+E:\Suzi\Libre Ry\Libre Ry\bin\Debug\System.Data.SQLite.dll.config
+E:\Suzi\Libre Ry\Libre Ry\obj\Debug\Libre Ry.csproj.CopyComplete
+E:\Suzi\Libre Ry\Libre Ry\obj\Debug\panelAdmin.g.cs
+E:\Suzi\Libre Ry\Libre Ry\obj\Debug\panelOgrenci.g.cs
+E:\Suzi\Libre Ry\Libre Ry\obj\Debug\panelOgretmen.g.cs
+E:\Suzi\Libre Ry\Libre Ry\obj\Debug\panelAdmin.baml
+E:\Suzi\Libre Ry\Libre Ry\obj\Debug\panelOgrenci.baml
+E:\Suzi\Libre Ry\Libre Ry\obj\Debug\panelOgretmen.baml
+E:\Suzi\Libre Ry\Libre Ry\obj\Debug\UserControls\ucAdminKitapEkle.g.cs
+E:\Suzi\Libre Ry\Libre Ry\obj\Debug\UserControls\ucAdminKitapEkle.baml
+E:\Suzi\Libre Ry\Libre Ry\obj\Debug\UserControls\ucAdminKitaplariListele.g.cs
+E:\Suzi\Libre Ry\Libre Ry\obj\Debug\UserControls\ucAdminKitaplariListele.baml
+E:\Suzi\Libre Ry\Libre Ry\obj\Debug\UserControls\ucAdminKullanimdakiKitaplar.g.cs
+E:\Suzi\Libre Ry\Libre Ry\obj\Debug\UserControls\ucAdminKullanimdakiKitaplar.baml
+E:\Suzi\Libre Ry\Libre Ry\obj\Debug\UserControls\ucAdminKullanicilar.g.cs
+E:\Suzi\Libre Ry\Libre Ry\obj\Debug\UserControls\ucAdminKullanicilar.baml
