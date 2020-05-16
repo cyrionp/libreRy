@@ -28,7 +28,8 @@ namespace Libre_Ry.UserControls
         {
             InitializeComponent();
             TabloGuncelle();
-            HizliArama();
+            TextBosalt();
+            KitapAra();
         }
         string KitapId = "";
 
@@ -55,39 +56,43 @@ namespace Libre_Ry.UserControls
             }
         }
 
+        private void TextBosalt()
+        {
+            this.txtAd.Clear();
+            this.txtAdet.Clear();
+            this.txtKategori.Clear();
+            this.txtSayfa.Clear();
+            this.txtYazar.Clear();
+            this.txtYil.Clear();
+            this.KitapId = "";
+        }
+
         private void KitapAra()
         {
-            try
+            if (txtAd.Text != "" || txtAdet.Text != "" || txtKategori.Text != "" || txtSayfa.Text != "" || txtYazar.Text != "" || txtYil.Text != "")
             {
-                con.Open();
-                string Query = "SELECT * FROM books WHERE ad LIKE '%" + this.txtAd.Text + "%' AND  adet LIKE '%" + this.txtAdet.Text + "%' AND kategori LIKE '%" + this.txtKategori.Text + "%' AND sayfa LIKE '%" + this.txtSayfa.Text + "%' AND yazar LIKE '%" + this.txtYazar.Text + "%' AND yil LIKE '%" + this.txtYil.Text + "%'";
-                SQLiteCommand createCommand = new SQLiteCommand(Query, con);
-                createCommand.ExecuteNonQuery();
-                SQLiteDataAdapter dataAdp = new SQLiteDataAdapter(createCommand);
-                DataTable dt = new DataTable("books");
-                dataAdp.Fill(dt);
-                dtgKitaplar.ItemsSource = dt.DefaultView;
-                dataAdp.Update(dt);
-                con.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
+                try
+                {
+                    this.txtAd.KeyDown += new KeyEventHandler(txtAd_KeyDown);
+                    this.txtAdet.KeyDown += new KeyEventHandler(txtAdet_KeyDown);
+                    con.Open();
+                    string Query = "SELECT * FROM books WHERE ad LIKE '%" + this.txtAd.Text + "%' AND  adet LIKE '" + this.txtAdet.Text + "%' AND kategori LIKE '%" + this.txtKategori.Text + "%' AND sayfa LIKE '" + this.txtSayfa.Text + "%' AND yazar LIKE '%" + this.txtYazar.Text + "%' AND yil LIKE '" + this.txtYil.Text + "%'";
+                    SQLiteCommand createCommand = new SQLiteCommand(Query, con);
+                    createCommand.ExecuteNonQuery();
+                    SQLiteDataAdapter dataAdp = new SQLiteDataAdapter(createCommand);
+                    DataTable dt = new DataTable("books");
+                    dataAdp.Fill(dt);
+                    dtgKitaplar.ItemsSource = dt.DefaultView;
+                    dataAdp.Update(dt);
+                    con.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
         }
 
-        private void HizliArama()
-        {
-            try
-            {
-                this.txtAd.KeyDown += new KeyEventHandler(txtAd_KeyDown);
-                KitapAra();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
 
         private void dtgKitaplar_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -123,14 +128,7 @@ namespace Libre_Ry.UserControls
                     con.Close();
                     MessageBox.Show("Book added");
 
-                    txtAd.Clear();
-                    txtAdet.Clear();
-                    txtKategori.Clear();
-                    txtSayfa.Clear();
-                    txtYazar.Clear();
-                    txtYil.Clear();
-                    KitapId = "";
-
+                    TextBosalt();
                     TabloGuncelle();
                 }
                 catch (Exception ex)
@@ -154,14 +152,7 @@ namespace Libre_Ry.UserControls
                     MessageBox.Show("Book Updated");
                     sqliteCon.Close();
 
-                    txtAd.Clear();
-                    txtAdet.Clear();
-                    txtKategori.Clear();
-                    txtSayfa.Clear();
-                    txtYazar.Clear();
-                    txtYil.Clear();
-                    KitapId = "";
-
+                    TextBosalt();
                     TabloGuncelle();
                 }
                 catch (Exception ex)
@@ -185,14 +176,7 @@ namespace Libre_Ry.UserControls
                     MessageBox.Show("Book Deleted");
                     sqliteCon.Close();
 
-                    txtAd.Clear();
-                    txtAdet.Clear();
-                    txtKategori.Clear();
-                    txtSayfa.Clear();
-                    txtYazar.Clear();
-                    txtYil.Clear();
-                    KitapId = "";
-
+                    TextBosalt();
                     TabloGuncelle();
                 }
                 catch (Exception ex)
@@ -202,22 +186,94 @@ namespace Libre_Ry.UserControls
             }
         }
 
-        private void btnKitapAra_Click(object sender, RoutedEventArgs e)
+        private void btnKitapYenile_Click(object sender, RoutedEventArgs e)
         {
-            if (txtAd.Text != "" || txtAdet.Text!=""|| txtKategori.Text != "" || txtSayfa.Text!="" || txtYazar.Text != "" || txtYil.Text != "")
-            {
-                KitapAra();
-            }
-            else { MessageBox.Show("You have to type something"); }
+            TabloGuncelle();
+            TextBosalt();
         }
 
-        private void txtAd_KeyDown(object sender, KeyEventArgs e)
+        private void txtAd_KeyDown(object sender, KeyEventArgs e) { KitapAra(); }
+
+        private void txtYazar_KeyDown(object sender, KeyEventArgs e) { KitapAra(); }
+        
+        private void txtYil_KeyDown(object sender, KeyEventArgs e) { KitapAra(); }
+
+        private void txtSayfa_KeyDown(object sender, KeyEventArgs e) { KitapAra(); }
+
+        private void txtAdet_KeyDown(object sender, KeyEventArgs e) { KitapAra(); }
+
+        private void txtKategori_KeyDown(object sender, KeyEventArgs e) { KitapAra(); }
+
+        private void txtAd_KeyUp(object sender, KeyEventArgs e)
         {
-            if (txtAd.Text != "" || txtAdet.Text != "" || txtKategori.Text != "" || txtSayfa.Text != "" || txtYazar.Text != "" || txtYil.Text != "")
+            if (this.txtAd.Text == "") { TabloGuncelle(); }
+            else
             {
-                KitapAra();
+                if (e.Key == Key.Back)
+                {
+                    KitapAra();
+                }
             }
-            //else { MessageBox.Show("You have to type something"); }
+        }
+
+        private void txtYazar_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (this.txtYazar.Text == "") { TabloGuncelle(); }
+            else
+            {
+                if (e.Key == Key.Back)
+                {
+                    KitapAra();
+                }
+            }
+        }
+
+        private void txtYil_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (this.txtYil.Text == "") { TabloGuncelle(); }
+            else
+            {
+                if (e.Key == Key.Back)
+                {
+                    KitapAra();
+                }
+            }
+        }
+
+        private void txtSayfa_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (this.txtSayfa.Text == "") { TabloGuncelle(); }
+            else
+            {
+                if (e.Key == Key.Back)
+                {
+                    KitapAra();
+                }
+            }
+        }
+
+        private void txtAdet_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (this.txtAdet.Text == "") { TabloGuncelle(); }
+            else
+            {
+                if (e.Key == Key.Back)
+                {
+                    KitapAra();
+                }
+            }
+        }
+
+        private void txtKategori_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (this.txtKategori.Text == "") { TabloGuncelle(); }
+            else
+            {
+                if (e.Key == Key.Back)
+                {
+                    KitapAra();
+                }
+            }
         }
     }
 }

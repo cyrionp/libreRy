@@ -85,9 +85,6 @@
     <Compile Include="panelOgretmen.xaml.cs">
       <DependentUpon>panelOgretmen.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\ucAdminKitapEkle.xaml.cs">
-      <DependentUpon>ucAdminKitapEkle.xaml</DependentUpon>
-    </Compile>
     <Compile Include="UserControls\ucAdminKitaplariListele.xaml.cs">
       <DependentUpon>ucAdminKitaplariListele.xaml</DependentUpon>
     </Compile>
@@ -124,10 +121,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="panelOgretmen.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="UserControls\ucAdminKitapEkle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

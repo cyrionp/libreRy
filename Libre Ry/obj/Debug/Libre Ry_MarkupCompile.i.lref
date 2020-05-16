@@ -4,7 +4,10 @@ FE:\Suzi\Libre Ry\libreRy\Libre Ry\panelAdmin.xaml;;
 FE:\Suzi\Libre Ry\libreRy\Libre Ry\panelLogin.xaml;;
 FE:\Suzi\Libre Ry\libreRy\Libre Ry\panelOgrenci.xaml;;
 FE:\Suzi\Libre Ry\libreRy\Libre Ry\panelOgretmen.xaml;;
+<<<<<<< Updated upstream
 FE:\Suzi\Libre Ry\libreRy\Libre Ry\UserControls\ucAdminKitapEkle.xaml;;
+=======
+>>>>>>> Stashed changes
 FE:\Suzi\Libre Ry\libreRy\Libre Ry\UserControls\ucAdminKitaplariListele.xaml;;
 FE:\Suzi\Libre Ry\libreRy\Libre Ry\UserControls\ucAdminKullanicilar.xaml;;
 FE:\Suzi\Libre Ry\libreRy\Libre Ry\UserControls\ucAdminKullanimdakiKitaplar.xaml;;

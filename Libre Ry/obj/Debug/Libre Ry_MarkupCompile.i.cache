@@ -10,11 +10,19 @@ none
 false
 DEBUG;TRACE
 E:\Suzi\Libre Ry\libreRy\Libre Ry\App.xaml
+<<<<<<< Updated upstream
 1043444260
 
 17974102516
 19-603677112
 panelAdmin.xaml;panelLogin.xaml;panelOgrenci.xaml;panelOgretmen.xaml;UserControls\ucAdminKitapEkle.xaml;UserControls\ucAdminKitaplariListele.xaml;UserControls\ucAdminKullanicilar.xaml;UserControls\ucAdminKullanimdakiKitaplar.xaml;UserControls\ucKayit.xaml;UserControls\ucLogin.xaml;
+=======
+9-65327033
+
+16-1948329126
+19-603677112
+panelAdmin.xaml;panelLogin.xaml;panelOgrenci.xaml;panelOgretmen.xaml;UserControls\ucAdminKitaplariListele.xaml;UserControls\ucAdminKullanicilar.xaml;UserControls\ucAdminKullanimdakiKitaplar.xaml;UserControls\ucKayit.xaml;UserControls\ucLogin.xaml;
+>>>>>>> Stashed changes
 
 True
 
